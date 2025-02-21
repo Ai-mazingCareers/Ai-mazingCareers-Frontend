@@ -1,0 +1,306 @@
+.background-motion span {
+    position: fixed;
+    top: -190px;
+    z-index: -1;
+    border-radius: 50%; /* Circular shape */
+    animation: animate 5s linear infinite;
+}
+
+.background-motion span:nth-child(1) {
+    left: 5%;
+    animation-delay: 0.65s;
+    width: 80px;
+    height: 80px;
+    background: #ffd1dc69;/* Light pink */
+}
+
+.background-motion span:nth-child(5) {
+    left: 40%;
+    animation-delay: 1s;
+    width: 110px;
+    height: 110px;
+    background: #ff6b6b69; /* Soft red */
+}
+
+.background-motion span:nth-child(9) {
+    left: 80%;
+    animation-delay: 1.6s;
+    width: 100px;
+    height: 100px;
+    background: #77dd7769; /* Pastel green */
+}
+
+.background-motion span:nth-child(12) {
+    left: 25%;
+    animation-delay: 1s;
+    width: 120px;
+    height: 120px;
+    background:  #ffe4e169; /* Misty rose */
+}
+.background-motion span:nth-child(18) {
+    left: 85%;
+    animation-delay: 1.8s;
+    width: 140px;
+    height: 140px;
+    background: #ffb7b269; /* Light salmon */
+}
+
+.background-motion span:nth-child(2) {
+    left: 60%;
+    animation-delay: 3s;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(45deg, #f8ff8569, #a8e06369); /* Soft yellow-green */
+}
+
+.background-motion span:nth-child(3) {
+    left: 20%;
+    animation-delay: 2s;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, #ffffff69, #e0e0e069); /* Pure white fade */
+}
+
+.background-motion span:nth-child(4) {
+    left: 30%;
+    animation-delay: 5s;
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(45deg, #ffef9f69, #ffcc7069); /* Warm yellow-orange */
+}
+
+.background-motion span:nth-child(6) {
+    left: 50%;
+    animation-delay: 7s;
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(45deg, #80d0c769, #0093e969); /* Teal to blue */
+}
+
+.background-motion span:nth-child(7) {
+    left: 60%;
+    animation-delay: 4s;
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(45deg, #da70d669, #ba55d369); /* Orchid purple */
+}
+
+.background-motion span:nth-child(8) {
+    left: 70%;
+    animation-delay: 2s;
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(45deg, #9a8cff69, #6a5acd69); /* Soft violet */
+}
+
+.background-motion span:nth-child(10) {
+    left: 90%;
+    animation-delay: 3.5s;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(45deg, #c1ff9b69, #80ff7269); /* Lime-green mix */
+}
+
+.background-motion span:nth-child(11) {
+    left: 15%;
+    animation-delay: 2.5s;
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(45deg, #ff9a8b69, #ff6a8869); /* Coral to pink */
+}
+
+.background-motion span:nth-child(13) {
+    left: 35%;
+    animation-delay: 6s;
+    width: 160px;
+    height: 160px;
+    background: linear-gradient(45deg, #f3e5f569, #e1bee769); /* Lavender to light purple */
+}
+
+.background-motion span:nth-child(14) {
+    left: 45%;
+    animation-delay: 3s;
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(45deg, #ffcccb69, #ff999969); /* Light coral */
+}
+
+.background-motion span:nth-child(15) {
+    left: 55%;
+    animation-delay: 4.5s;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, #d4fc7969, #96e6a169); /* Soft lime-green to mint */
+}
+
+.background-motion span:nth-child(16) {
+    left: 65%;
+    animation-delay: 2.2s;
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(45deg, #fbe7c669, #f8d6a569); /* Light peach */
+}
+
+.background-motion span:nth-child(17) {
+    left: 75%;
+    animation-delay: 5.5s;
+    width: 170px;
+    height: 170px;
+    background: linear-gradient(45deg, #f9f7d969, #e2ffc669); /* Pale yellow to light green */
+}
+
+.background-motion span:nth-child(19) {
+    left:2%;
+    animation-delay: 3.8s;
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(45deg, #ffecd269, #ffa97e69); /* Peach to light orange */
+}
+
+.background-motion span:nth-child(20) {
+    left: 10%;
+    animation-delay: 2.9s;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(45deg, #ffe6e669, #ffb6c169); /* Light pink */
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0);
+        opacity: 0.2;
+    }
+    5%{
+        opacity: 0.5;
+    }
+    13%{
+        opacity: 0.8;
+    }
+    40%{
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(50vh) rotate(180deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+@keyframes animate-left {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 0;
+    }
+    5% {
+        opacity: 0.2;
+    }
+    13% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+    }
+    50% {
+        transform: translateX(50px) translateY(50vh) rotate(180deg);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateX(100px) translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes animate-right {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 0;
+    }
+    5% {
+        opacity: 0.2;
+    }
+    13% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+    }
+    50% {
+        transform: translateX(-50px) translateY(50vh) rotate(180deg);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateX(-100px) translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.background-motion {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.background-motion span {
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.3);
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+/* Assign different positions for each child */
+.background-motion span:nth-child(1) {
+    top: 5vh;
+    left: 10vw;
+    animation: animate-left 5s linear infinite;
+}
+
+.background-motion span:nth-child(2) {
+    top: 15vh;
+    left: 60vw;
+    animation: animate-right 5s linear infinite;
+}
+
+.background-motion span:nth-child(3) {
+    top: 25vh;
+    left: 30vw;
+    animation: animate-left 5s linear infinite;
+}
+
+.background-motion span:nth-child(4) {
+    top: 40vh;
+    left: 80vw;
+    animation: animate-right 5s linear infinite;
+}
+
+.background-motion span:nth-child(5) {
+    top: 55vh;
+    left: 20vw;
+    animation: animate-left 5s linear infinite;
+}
+
+.background-motion span:nth-child(6) {
+    top: 70vh;
+    left: 90vw;
+    animation: animate-right 5s linear infinite;
+}
+
+.background-motion span:nth-child(7) {
+    top: 85vh;
+    left: 50vw;
+    animation: animate-left 5s linear infinite;
+}
+
+.background-motion span:nth-child(8) {
+    top: 95vh;
+    left: 70vw;
+    animation: animate-right 5s linear infinite;
+}
