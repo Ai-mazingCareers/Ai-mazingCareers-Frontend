@@ -1,0 +1,32 @@
+.file-upload{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:5%;
+    width: 80%;
+    background-color: rgba(128, 128, 128, 0.355);
+    height: 50%;
+    align-items: center;
+    border-radius: 5px;
+    input{
+        width: 70%;
+        height: 6vh;
+    }
+    p{
+    }
+    button{
+        background-color: rgb(230, 39, 39);
+        cursor: pointer;
+        color: aliceblue;
+        height: 6vh;
+        border-radius: 5px;
+        font-weight: bolder;
+        width: 70%;
+        border:none;
+    }
+    button:hover{
+        background-color: red;
+        box-shadow: 0 0 10px 2.5px #ff0000ab, 0 0 20px 5px #ff00007a, 0 0 30px 7.5px #ff000061;
+        border-radius: 5px; 
+    }
+}
