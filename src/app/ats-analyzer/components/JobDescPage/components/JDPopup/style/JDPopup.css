@@ -1,0 +1,73 @@
+.popup-jobform {
+  position: absolute;
+  background-color: black;
+  width: 50vh;
+  height: 70vh;
+  /* Thin scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+}
+.popup-jobform .popup-close-btn {
+  position: absolute;
+  right: 1.5%;
+  top: 1%;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.popup-jobform form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 11%;
+  height: 80%;
+  gap: 2%;
+  padding: 2%;
+  overflow-y: auto;
+}
+.popup-jobform form textarea {
+  min-height: 10vh;
+  min-width: 100%;
+  max-width: 100%;
+}
+.popup-jobform form input:not(input[type=radio]) {
+  min-height: 10%;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  padding-left: 2%;
+}
+.popup-jobform form input:not(input[type=radio]):focus {
+  border-bottom: 1px solid white;
+}
+.popup-jobform form sup {
+  color: red;
+}
+.popup-jobform form::-webkit-scrollbar {
+  width: 6px; /* Adjust width for vertical scrollbar */
+}
+.popup-jobform form::-webkit-scrollbar-track {
+  background: #888; /* Background color of track */
+}
+.popup-jobform form::-webkit-scrollbar-thumb {
+  background: #f1f1f1; /* Color of scrollbar */
+  border-radius: 5px; /* Rounded edges */
+}
+.popup-jobform form::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color on hover */
+}
+.popup-jobform .form-submit {
+  position: absolute;
+  bottom: 2%;
+  right: 10%;
+  height: 8%;
+  width: 40%;
+  background-color: rgb(233, 50, 50);
+  border: 0;
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: bold;
+  cursor: pointer;
+}
+.popup-jobform .form-submit:hover {
+  background-color: red;
+  box-shadow: 0 0 10px 2.5px rgba(255, 0, 0, 0.6705882353), 0 0 20px 5px rgba(255, 0, 0, 0.4784313725), 0 0 30px 7.5px rgba(255, 0, 0, 0.3803921569);
+}/*# sourceMappingURL=JDPopup.css.map */

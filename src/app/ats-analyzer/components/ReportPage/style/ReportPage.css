@@ -1,0 +1,26 @@
+.report {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-left: 1%;
+}
+.report .report-close-btn {
+  position: absolute;
+  right: 1.5%;
+  top: 1%;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.report .report-header {
+  font-weight: bolder;
+  font-size: large;
+  text-align: center;
+  margin-top: 2%;
+}
+.report .tick {
+  color: greenyellow;
+}
+.report .cross {
+  color: red;
+}/*# sourceMappingURL=ReportPage.css.map */

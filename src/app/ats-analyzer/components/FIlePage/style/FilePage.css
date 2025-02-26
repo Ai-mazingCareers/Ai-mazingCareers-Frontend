@@ -1,0 +1,30 @@
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5%;
+  width: 80%;
+  background-color: rgba(128, 128, 128, 0.355);
+  height: 50%;
+  align-items: center;
+  border-radius: 5px;
+}
+.file-upload input {
+  width: 70%;
+  height: 6vh;
+}
+.file-upload button {
+  background-color: rgb(230, 39, 39);
+  cursor: pointer;
+  color: aliceblue;
+  height: 6vh;
+  border-radius: 5px;
+  font-weight: bolder;
+  width: 70%;
+  border: none;
+}
+.file-upload button:hover {
+  background-color: red;
+  box-shadow: 0 0 10px 2.5px rgba(255, 0, 0, 0.6705882353), 0 0 20px 5px rgba(255, 0, 0, 0.4784313725), 0 0 30px 7.5px rgba(255, 0, 0, 0.3803921569);
+  border-radius: 5px;
+}/*# sourceMappingURL=FilePage.css.map */
