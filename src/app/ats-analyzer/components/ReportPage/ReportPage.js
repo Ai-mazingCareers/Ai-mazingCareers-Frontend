@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './style/ReportPage.css';
   
-const ReportPage = ({response,setCount, setPdfUrl}) => {
+const ReportPage = ({response,setCount, setPdfUrl, setUpload}) => {
   const [ats,setATS]=useState(0);
   const [nameFound, setNameFound]=useState(false);
   const [name,setName]=useState("");
@@ -21,6 +21,7 @@ const ReportPage = ({response,setCount, setPdfUrl}) => {
   function handleClose(){
     setCount(0);
     setPdfUrl(null);
+    setUpload(false);
   }
   useEffect(()=>{
     if(response){
@@ -61,7 +62,7 @@ const ReportPage = ({response,setCount, setPdfUrl}) => {
   return (
     <div className='report'>
       <div className='report-close-btn' onClick={handleClose}>x</div>
-      <div className='report-header'>Analysis Report</div>
+      <div className='report-header'><u>Analysis Report</u></div>
       <div>{"ATS Score: "}<span>{ats}{"%"}</span></div><br></br>
 
       <div>{`Skill Matched: `}<span>{skillScore}{`%`}</span></div><br></br>

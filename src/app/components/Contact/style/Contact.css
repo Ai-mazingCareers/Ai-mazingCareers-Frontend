@@ -1,0 +1,36 @@
+.contact-wrapper {
+  min-width: 30%;
+}
+
+.contact-wrapper form {
+  height: -moz-max-content;
+  height: max-content;
+  font-size: clamp(0.65rem, 2.5vw, 1.8rem);
+}
+
+.contact-wrapper form input {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 96%;
+}
+
+.contact-wrapper form textarea {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 97%;
+}
+
+.contact-header {
+  font-weight: bold;
+  font-size: clamp(0.65rem, 2.5vw, 1.8rem);
+  margin-bottom: 1%;
+}
+
+.contact-wrapper form button {
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.contact-wrapper form button:active {
+  background-color: red;
+}/*# sourceMappingURL=Contact.css.map */

@@ -3,6 +3,7 @@
     align-items: center;
     gap: 15px;
     padding:2%;
+    max-width: 100%;
 }
 
 /* Magnifying Glass Animation */
@@ -39,12 +40,10 @@
 
 /* Glowing Text Animation */
 .glowing-text {
-    font-size: 2rem;
+    font-size: x-large;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 5px;
     display: flex;
-    gap: 5px;
 }
 
 .glowing-text span {
