@@ -1,8 +1,8 @@
 .popup-jobform {
   position: absolute;
   background-color: black;
-  width: 50vh;
-  height: 70vh;
+  width: 100%;
+  height: 100%;
   /* Thin scrollbar for WebKit browsers (Chrome, Safari, Edge) */
 }
 .popup-jobform .popup-close-btn {
