@@ -4,9 +4,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+
     width:94%;
-    height: 50%;
+    min-height: 50%;
     gap:5%;
     border-radius: 5px;
     h2{
@@ -15,7 +15,7 @@
     .job-title-container{
         background-color: black;
         width: 98%;
-        height: 70%;
+        min-height: 70%;
         display: flex;
         flex-wrap: wrap;
         align-items:center;

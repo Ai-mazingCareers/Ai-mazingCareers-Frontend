@@ -11,14 +11,12 @@ export const frontend_engineer = {
     "skillsRequired": [
         "JavaScript",
         "Reactjs",
-        "HTML",
-        "CSS"
+        "Python"
     ],
     "preferredSkills": [
         "Nextjs",
         "TypeScript",
         "Redux",
-        "Figma",
         "Github"
     ],
     "responsibilities": "Design, develop, and maintain high-quality frontend applications. Work closely with UI/UX designers to translate designs into responsive user interfaces. Optimize web applications for speed and scalability. Collaborate with backend engineers to integrate APIs seamlessly. Write clean, maintainable, and reusable code. Ensure cross-browser compatibility and mobile responsiveness. Stay updated with emerging frontend technologies and best practices."
