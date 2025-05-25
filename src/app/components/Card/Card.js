@@ -2,7 +2,7 @@ import Image from "next/image";
 import "./style/Card.css";
 function Card({link,head,body}){
   return (
-    <div>
+    <div className="card-box">
       <div className="card-image-container">
         <Image
             src={link}

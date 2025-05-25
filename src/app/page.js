@@ -5,49 +5,24 @@ import Image from 'next/image';
 import Card from './components/Card/Card';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import Contact from './components/Contact/Contact';
+import Link from 'next/link';
+import { useShared } from './context/SharedContext';
 
 export default function Home() {
-  const [width, setWidth] = useState(window.innerWidth);
-  const [menuOpen,setMenuOpen]=useState(false);
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  const handleMenu=()=>{
-    setMenuOpen(!menuOpen);
-  }
+  const {currentNav,setCurrentNav}=useShared();
+    const handleNavClick = (x)=>{
+      setCurrentNav(x);
+    }
+  
   return (
     <>
-      <div className='nav-wrapper'>
-        <div className='logo'>{"AimazingCareers"}</div>
-        {width >= 600?
-        <div className='nav-list-wrapper'>
-          <div><a href="#" className='redirect'>{"Home"}</a></div>
-          <div><a href="/ats-analyzer" className='redirect'>{"Ats-analyzer"}</a></div>
-          <div><a href="#footer" className='redirect'>{"Contact Us"}</a></div>
-        </div>:
-        <>
-        <div className="ham-menu">
-          <div onClick={handleMenu} className="ham-icon">{menuOpen?"X":"☰"}</div>
-        </div>
-        {menuOpen?<div className='menu-dropdown'>
-          <div><a href="#home" className='redirect'>{"Home"}</a></div>
-          <div><a href="/ats-analyzer" className='redirect'>{"Ats-analyzer"}</a></div>
-          <div><a href="#footer" className='redirect'>{"Contact Us"}</a></div>
-        </div>:<></>}
-        </>
-        }
-      </div>
 
       <div className='home' >
         <h1>{"Unlock Your Career Potential with AimazingCareers Tailored Job Solutions"}</h1>
-        <p>{"Welcome message and brief introduction about aimazingCareers and its recruitment services"}</p>
+        <p>{"Discover job opportunities that match your skills and boost your ATS score with us."}</p>
         <div className='home-btn'>
           <div className='download-btn'>{"Download"}</div>
-          <div className='signup-btn'>{"Sign Up"}</div>
+          <div className='signup-btn'><Link href="/ats-analyzer" onClick={()=>handleNavClick("ats")} className='redirect'>{"Try Ats Analyzer!"}</Link></div>
         </div>
         <div className='home-image'>
           <Image
@@ -71,6 +46,34 @@ export default function Home() {
             alt="image"
             style={{ objectFit: 'contain' }}
           />
+        </div>
+      </div>
+      <hr id="sectiona"/>
+      <div className='sectiona' >
+        <div className='sectiona_header'>
+          <div className='sectiona_heading'>{"Unlock Your Job Potential with ATS Analyzer"}</div>
+          <div className='sectiona_subheading'>{"Our ATS Analyzer uses a custom algorithm to evaluate your resume's compatibility with applicant tracking systems. Discover what elements you need to enhance for better job opportunities."}</div>
+        </div>
+        <div className='sectiona_cards'>
+        <Card 
+            link={"/icon_cube.png"}
+            head={"How Our ATS Analyzer Works"}
+            body={"Get a detailed analysis of your ATS score."}
+          />
+        <Card 
+            link={"/icon_cube.png"}
+            head={"Identify Key Areas for Improvement"}
+            body={"Receive personalized recommendations to enhance your resume."}
+          />
+         <Card 
+            link={"/icon_cube.png"}
+            head={"Start Your Journey to Career Success"}
+            body={"Empower your job search with actionable insights."}
+          />
+        </div>
+        <div className='sectiona_btn'>
+          <Link href="/ats-analyzer" onClick={()=>handleNavClick("ats")} className='sectiona_btn1'>{"Analyze"}</Link>
+          <div className='sectiona_btn2'>{"Learn More >"}</div>
         </div>
       </div>
       <hr/>
