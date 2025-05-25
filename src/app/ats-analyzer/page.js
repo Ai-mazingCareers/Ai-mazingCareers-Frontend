@@ -38,9 +38,9 @@ const page = () => {
 
   return (
     <div className='ats-analyzer-container'>
-        <div className="logo">
+        {/* <div className="logo">
             <h1>{"Ai-mazingCareers"}</h1>
-        </div>
+        </div> */}
         <div className="header">
                 <h1>{"Resume ATS Analyzer"}</h1>
         </div>
@@ -72,7 +72,7 @@ const page = () => {
       href={pdfUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg"
+      className="open-pdf-btn"
     >open in new tab</a>
         </div>:<></>}
         </div>

@@ -1,63 +1,3 @@
-.nav-wrapper {
-  display: flex;
-  align-items: center;
-  background-color: grey;
-  position: sticky;
-  top: 0;
-  height: 5vh;
-  z-index: 1000;
-}
-
-.logo {
-  width: 50%;
-  padding-left: 2%;
-  -webkit-text-fill-color: #ffffff;
-  -webkit-text-stroke-color: #ffffff;
-  -webkit-text-stroke-width: 1px;
-  text-shadow: 3px 7px 5px rgba(255, 255, 255, 0.5);
-}
-
-.nav-list-wrapper {
-  display: flex;
-  justify-content: space-around;
-  width: 50%;
-}
-
-.ham-menu {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.ham-icon {
-  padding-right: 2%;
-}
-
-.menu-dropdown {
-  position: absolute;
-  top: 5vh;
-  width: 100%;
-  background-color: rgba(128, 128, 128, 0.853);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-}
-
-.menu-dropdown div {
-  text-align: center;
-  margin: 1%;
-  cursor: pointer;
-}
-
-.menu-dropdown div:active {
-  background-color: grey;
-}
-
-.redirect {
-  cursor: pointer;
-  text-decoration: none;
-  color: black;
-}
-
 .home {
   padding: 4%;
   padding-top: 0;
@@ -164,7 +104,7 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.section2-btn:hover {
+.section2-btn:active {
   color: white;
   background-color: black;
 }
@@ -190,4 +130,53 @@
   color: aliceblue;
   font-size: clamp(0.4rem, 2.5vw, 1.5rem);
   padding-bottom: 1%;
+}
+
+.sectiona {
+  padding: 4%;
+}
+
+.sectiona_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectiona_heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: clamp(1.5rem, 4vw, 4rem);
+}
+
+.sectiona_subheading {
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.sectiona_cards {
+  display: flex;
+  gap: 2%;
+}
+
+.sectiona_btn {
+  display: flex;
+  justify-content: center;
+}
+
+.sectiona_btn1, .sectiona_btn2 {
+  margin-top: 5%;
+  color: black;
+  padding: 1%;
+  cursor: pointer;
+}
+
+.sectiona_btn1 {
+  border: 2px solid black;
+  text-decoration: none;
+}
+
+.sectiona_btn1:active {
+  color: white;
+  background-color: black;
 }/*# sourceMappingURL=page.css.map */

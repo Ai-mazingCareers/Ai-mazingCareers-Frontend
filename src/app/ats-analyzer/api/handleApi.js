@@ -26,7 +26,7 @@ export const handleApi= async ({data,pdfFile,setUpload,setResponse})=>{
         const formData = new FormData();
         formData.append('resume', pdfFile);
         formData.append('job_desc', JSON.stringify(dataToSend)); 
-        const response = await fetch('http://localhost:5000/api/check-ats-score', {
+        const response = await fetch('https://api.aimazingcareers.site/api/check-ats-score', {
             method: 'POST',
             body: formData
         });
