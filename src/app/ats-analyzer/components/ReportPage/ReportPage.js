@@ -63,31 +63,37 @@ const ReportPage = ({response,setCount, setPdfUrl, setUpload}) => {
     <div className='report'>
       <div className='report-close-btn' onClick={handleClose}>x</div>
       <div className='report-header'><u>Analysis Report</u></div>
-      <div>{"ATS Score: "}<span>{ats}{"%"}</span></div><br></br>
-
-      <div>{`Skill Matched: `}<span>{skillScore}{`%`}</span></div><br></br>
-
-      <div>{`Experience Match Score: `}<span>{experienceMatch}{`/5`}</span></div><br></br>
       
-      <div>{`Formatting Score: `}<span>{formatScore}{`/5`}</span></div><br></br>
-  
-      <br></br>
-      <div>{`Detailed Analysis:`}</div><br></br>
-      <div>{`Name ${nameFound?"":"not"} found`} {nameFound?<><span className='tick'>&#10004;</span> {name}</>:<span className='cross'>&#10008;</span>}</div>
-      <div>{`Email ${emailFound?"":"not"}  Found`} {emailFound?<><span className='tick'>&#10004;</span> {email}</>:<span className='cross'>&#10008;</span>}</div>
-      <div>{`Phone Number ${phoneFound?"":"not"}  Found`} {phoneFound?<><span className='tick'>&#10004;</span> {phone}</>:<span className='cross'>&#10008;</span>}</div><br/>
+      <div className='report-box'>
+      <div>{"ATS Score "}<br/><b><span>{ats?ats:"0"}{"%"}</span></b></div>
 
-
-      <div>{"Number of Skills Detected:"}</div>
-      <div>{"Technical skills: "}{skillCount.tech}<br/>{" Soft Skills: "}{skillCount.soft}</div>
+      <div>{`Skill Matched `}<br/><b><span>{skillScore}{`%`}</span></b></div>
+      </div>
+      <div className='report-box'>
+      <div>{`Experience Match `}<br/><b><span>{experienceMatch}{`/5`}</span></b></div>
       
+      <div>{`Formatting Score `}<br/><b><span>{formatScore}{`/5`}</span></b></div>
+      </div>
+
+      <div className='detailed-analysis-header'>{`Detailed Analysis`}</div><hr/>
+      <div>{`Name ${nameFound?"":"not"} found`} {nameFound?<><span className='tick'>&#10004;</span> {name}</>:<span className='cross'>&#10008;</span>}</div><hr/>
+      <div>{`Email ${emailFound?"":"not"}  Found`} {emailFound?<><span className='tick'>&#10004;</span> {email}</>:<span className='cross'>&#10008;</span>}</div><hr/>
+      <div>{`Phone Number ${phoneFound?"":"not"}  Found`} {phoneFound?<><span className='tick'>&#10004;</span> {phone}</>:<span className='cross'>&#10008;</span>}</div><hr/><br/>
+
+
+      <div className='detailed-analysis-header'>{"Number of Skills Detected"}</div>
+      <div className='report-box'>
+        <div>{"Technical skills "}<br/><b>{skillCount.tech}</b></div>
+        <div>{" Soft Skills "}<br/><b>{skillCount.soft}</b></div>
+      </div>
       <br/>
-      <div>{`Recommended skills based on Job Description:`}</div>
+      <div className='detailed-analysis-header'>{`Recommended skills based on Job Description`}</div>
+      <hr/>
       <div>
       {
         missingSkills.map((e,i)=><li key={i}>{e}</li>)
       }
-      
+      <hr/>
       </div>
     </div>
   )

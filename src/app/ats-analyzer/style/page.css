@@ -1,32 +1,7 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  background-color: #ffffff;
 }
 
 a {
@@ -34,37 +9,24 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
 .ats-analyzer-container {
-  background: radial-gradient(circle, rgba(72, 0, 180, 0.5333333333), #000000);
+  color: white;
+  background: #ffffff;
+  min-height: -moz-max-content;
+  min-height: max-content;
   height: 100vh;
-}
-
-.logo h1 {
-  padding-left: 10px;
-  padding-top: 4px;
-  -webkit-text-fill-color: #ffffff;
-  -webkit-text-stroke-color: #ffffff;
-  -webkit-text-stroke-width: px;
-  font-size: xx-large;
-  font-size: clamp(1.5rem, 3vw, 3rem);
-  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
 }
 
 .header {
   position: relative;
   text-align: center;
-  padding-top: 2%;
   font-size: 0.75em;
 }
 .header h1 {
-  -webkit-text-fill-color: #ffffff;
-  -webkit-text-stroke-color: #ffffff;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-color: black;
+  font-weight: bolder;
+  font-size: clamp(1.5rem, 3vw, 3rem);
   text-shadow: 3px 7px 5px rgba(255, 255, 255, 0.5);
 }
 
@@ -73,7 +35,6 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 80vh;
 }
 
 .resume-form {
@@ -86,7 +47,7 @@ a {
   justify-content: center;
   background-color: #000000;
   border-radius: 5px;
-  box-shadow: 0 0 20px 5px #00aaff, 0 0 40px 10px #0088ff, 0 0 60px 15px #0055ff;
+  box-shadow: 0 0 10px 2.5px #00aaff, 0 0 20px 5px #0088ff, 0 0 30px 7px #0055ff;
 }
 
 .pdf-file {
@@ -94,7 +55,11 @@ a {
   width: 94%;
 }
 
-.resume-viewer {
-  display: flex;
-  flex-direction: column;
+.open-pdf-btn {
+  background: red;
+  font-weight: bold;
+  border-radius: 5%;
+  padding: 1%;
+  position: absolute;
+  bottom: 0.5%;
 }/*# sourceMappingURL=page.css.map */
