@@ -21,7 +21,8 @@ export default function Home() {
         <h1>{"Unlock Your Career Potential with AimazingCareers Tailored Job Solutions"}</h1>
         <p>{"Discover job opportunities that match your skills and boost your ATS score with us."}</p>
         <div className='home-btn'>
-          <div className='download-btn'>{"Download"}</div>
+          <div className='download-btn'><a href="/aimazingcareers.apk" style={{textDecoration:"none",color:"white"}} download>  
+          {"Download"}</a></div>
           <div className='signup-btn'><Link href="/ats-analyzer" onClick={()=>handleNavClick("ats")} className='redirect'>{"Try Ats Analyzer!"}</Link></div>
         </div>
         <div className='home-image'>
@@ -97,7 +98,7 @@ export default function Home() {
             body={"Utilize our job seeking tools to enhance your application success."}
           />          
         </div>
-        <div className='section2-btn'>{"Download Now "}&#x2B07;</div>
+        <div className='section2-btn'><a href="/aimazingcareers.apk" style={{textDecoration:"none",color:"black"}} download>{"Download Now "}&#x2B07; </a></div>
       </div>
 
       <div className='footer' id="footer">
